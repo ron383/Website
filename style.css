@@ -1,0 +1,227 @@
+body {
+    margin: 0;
+    font-family: "Roboto Thin", sans-serif;
+}
+
+header {
+    background-color: #acc4ff;
+    background-size: 300px;
+    color: #ffffff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    background-image: url('img/logo.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    font-size: 2em;
+    border-radius: 50%;
+}
+
+.burger-btn {
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: #100f0f;
+
+    cursor: pointer;
+}
+
+.main-nav {
+    display: none;
+    animation-duration: 0.5s;
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+.fadeOut {
+    animation-name: fadeOut;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+
+.main-nav ul {
+    font-size: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.main-nav li {
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(10, 10, 10);
+}
+
+.about-us,
+.services {
+    text-align: center;
+    font-family: "Roboto Light";
+    font-size: 30px;
+    padding: 50px 0;
+    background-color: #17c1a4;
+    color: #fff;
+    padding: 40px;
+}
+
+.about-us {
+    background-color: #86509c;
+    color: #fff;
+    padding: 40px;
+}
+
+
+
+.service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-image {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.services ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; /* Выравниваем элементы вверху */
+}
+
+.services-list li {
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+}
+
+.service-item img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.buy-service-btn {
+    display: block;
+    margin: 50px auto;
+    background-color: #ecd141;
+    color: #0a0a0a;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.buy-service-btn:hover {
+    background-color: #d04407;
+    font-family: "Roboto Light";
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    max-width: 600px; /* Ограничиваем максимальную ширину формы */
+    margin: auto; /* Центрируем форму на странице */
+}
+
+.contact-form textarea,
+.contact-form input {
+    width: 100%;
+}
+
+.contact-form input {
+    margin-bottom: 15px;
+}
+
+.contact-form button {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.contact-form .input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.contact-form .input-group input {
+    width: 48%; /* Делим ширину пополам */
+}
+
+.contact-form .input-group label {
+    width: 48%; /* Делим ширину пополам */
+}
+
+.contact-form .input-group label span {
+    display: none; /* Прячем звездочку, чтобы не было лишних символов на одном ряду */
+}
+
+.contact-form textarea {
+    height: 100px; /* Уменьшаем высоту поля ввода сообщения */
+}
+
+.social-icons {
+    text-align: center; /* Центрируем текст по горизонтали */
+}
+
+.icons-container {
+    display: flex;
+    justify-content: center; /* Центрируем иконки по горизонтали */
+    align-items: center; /* Центрируем иконки по вертикали */
+    flex-wrap: wrap; /* Разрешаем перенос строк для иконок, если они не помещаются в одну строку */
+}
+
+.icon img {
+
+    margin: 10px; /* Добавляем отступ между иконками */
+    border-radius: 10px; /* Скругляем углы */
+}

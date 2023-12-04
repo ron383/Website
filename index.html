@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Адаптивная верстка с бургер-меню</title>
+</head>
+<body>
+<header>
+    <div class="logo"></div>
+    <button id="burger-btn" class="burger-btn">&#9776; Меню</button>
+    <nav id="main-nav" class="main-nav">
+        <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </nav>
+</header>
+<!-- Контент страницы -->
+<main>
+    <section class="about-us">
+        <h2>О нас</h2>
+        <b>Hi there! We are the new kids on the block, and we build awesome websites and mobile apps.</b>
+            <button class="buy-service-btn">WORK WITH AS!</button>
+    </section>
+
+    <section class="services">
+        <h2>SERVICES WE PROVIDE</h2>
+        <ul class="services-list">
+            <li>
+                <img src="img/1.png" alt="Notes" class="service-image">
+                <p>Заметки</p>
+            </li>
+            <li>
+                <img src="img/2.png" alt="Rocket" class="service-image">
+                <p>Ракета</p>
+            </li>
+            <li>
+                <img src="img/3.png" alt="Service" class="service-image">
+                <p>Услуга</p>
+            </li>
+            <li>
+                <img src="img/4.png" alt="Target" class="service-image">
+                <p>Цель</p>
+            </li>
+        </ul>
+        <button class="buy-service-btn">WORK WITH US!</button>
+    </section>
+
+    <!-- Добавьте еще различные секции и контент по вашему желанию -->
+
+</main>
+
+<!-- Футер страницы -->
+<footer>
+    <section class="contact">
+        <h1>GET IN TOUCH</h1>
+    </section>
+
+    <section class="contact-form">
+
+        <form id="contactForm">
+            <!-- Внутри вашей формы -->
+            <div class="input-group">
+                <label for="name">Введите имя<span>*</span></label>
+                <input type="text" id="name" name="name" placeholder="Write your name">
+            </div>
+
+            <div class="input-group">
+                <label for="email">Введите почту<span>*</span></label>
+                <input type="email" id="email" name="email" placeholder="Write your email">
+            </div>
+
+            <label for="message">Введите сообщение</label>
+            <textarea id="message" name="message" placeholder="Write your message"></textarea>
+
+            <button type="submit" class="buy-service-btn">Отправить</button>
+
+
+        </form>
+    </section>
+
+    <section class="social-icons">
+        <h2>Мы в социальных сетях</h2>
+        <div class="icon">
+            <img src="img/6.png" alt="Icon 1">
+            <img src="img/7.png" alt="Icon 1">
+            <img src="img/8.png" alt="Icon 2">
+            <img src="img/9.png" alt="Icon 3">
+            <img src="img/10.png" alt="Icon 4">
+        </div>
+
+    </section>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
